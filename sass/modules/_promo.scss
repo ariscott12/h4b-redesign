@@ -1,0 +1,33 @@
+.promo {
+  width: 100%;
+  margin-top: 4rem;
+
+  @include break-at-max(600) {
+  	margin-top: 2rem;
+  }
+}
+
+.promo__img {
+  border-radius: 12px;
+  border: 4px solid $yellow;
+  width: 100%;
+}
+
+.promo__copy {
+  @include center();
+  text-align: center;
+  background: $yellow;
+  color: $blue;
+  font-weight: bold;
+  font-size: 1.15rem;
+  padding: .5em;
+  width: 60%;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  @include break-at-max(1000) {
+    width: 80%;
+    font-size: 1rem;
+  }
+}
+
+

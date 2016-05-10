@@ -1,0 +1,32 @@
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") {
+  -webkit-box-shadow:$top $left $blur $color #{$inset};
+  -moz-box-shadow:$top $left $blur $color #{$inset};
+  box-shadow:$top $left $blur $color #{$inset};
+}
+
+@mixin center() {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+@mixin center-absolute() {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+// Media Queries
+@mixin break-at-max($breakpoint) {
+  @media only screen and (max-width: $breakpoint + px) {
+    @content;
+  }
+}
+
+@mixin break-at-min($breakpoint) {
+  @media only screen and (min-width: $breakpoint + px) {
+    @content;
+  }
+}
+

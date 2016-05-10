@@ -1,0 +1,50 @@
+.page-section {
+  padding: 6.25rem 0;
+  @include break-at-max(1200) {
+    padding: 6rem 0;
+  }
+  @include break-at-max(800) {
+    padding: 4rem 0;
+  }
+}
+
+.page-section__copy {
+  color: $gray-medium;
+  font-size: 1.25rem;
+  margin-bottom: 2em;
+  font-weight: 300;
+}
+
+.page-section__copy--center {
+  text-align: center;
+}
+
+.page-section__header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.25em;
+}
+
+.page-section--gray {
+  background: $white-dark;
+}
+
+.video {
+  width: 100%;
+  background: #ccc;
+  height: 300px;
+  margin-bottom: 2em;
+}
+
+@include break-at-max(600) {
+  .page-section__header {
+    font-size: 1.75rem;
+    margin-bottom:1em;
+  }
+  .page-section__copy {
+    font-size: 1rem;
+  }
+}
+
+

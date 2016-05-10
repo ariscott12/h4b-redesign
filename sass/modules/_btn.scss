@@ -1,0 +1,17 @@
+.btn {
+	background:$yellow;
+	color:$blue;
+	border:1px solid $yellow-dark;
+	font-weight: bold;	
+	padding: .5em 1em .6em 1em;
+	display:inline-block;
+	border-radius: 5px;
+	cursor:pointer;
+	&:hover {
+		background:darken($yellow, 30%);
+	}
+}
+.btn__link {
+	color:$blue;
+	font-size:.875rem;
+}

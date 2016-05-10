@@ -1,0 +1,101 @@
+// CSS Grids
+.grid-column-1 {
+  @include span-columns(1);
+}
+
+.grid-column-2 {
+  @include span-columns(2);
+}
+
+.grid-column-3 {
+  @include span-columns(3);
+  @include break-at-max(700) {
+    @include span-columns(6);
+    &:nth-child(2) {
+      @include omega();
+    }
+  }
+  @include break-at-max(475) {}
+}
+
+.grid-column-4 {
+  @include span-columns(4);
+  @include break-at-max(700) {
+    @include span-columns(6);
+    &:nth-child(2) {
+      @include omega();
+    }
+  }
+  @include break-at-max(475) {
+    @include span-columns(12);
+  }
+}
+
+.grid-column-5 {
+  @include span-columns(5);
+}
+
+.grid-column-6 {
+  @include span-columns(6);
+  @include break-at-max(600) {
+    @include span-columns(12);
+  }
+}
+
+.grid-column-7 {
+  @include span-columns(7);
+
+   @include break-at-max(1000) {
+    @include span-columns(8);
+  }
+   @include break-at-max(800) {
+    @include span-columns(9);
+  }
+   @include break-at-max(500) {
+    @include span-columns(12);
+  }
+}
+
+.grid-column-8 {
+  @include span-columns(8);
+  @include break-at-max(675) {
+    @include span-columns(12);
+  }
+}
+
+.grid-column-9 {
+  @include span-columns(9);
+}
+
+.grid-column-10 {
+  @include span-columns(10);
+}
+
+.grid-column-11 {
+  @include span-columns(11);
+}
+
+.grid-column-12 {
+  @include span-columns(12);
+}
+
+.grid-shift-2 {
+  @include shift(2);
+  @include break-at-max(675) {
+    @include shift(0);
+  }
+}
+
+.grid-shift-3 {
+  @include shift(3);
+}
+
+.grid-shift-4 {
+  @include shift(4);
+  @include break-at-max(700) {
+    @include shift(3);
+  }
+  @include break-at-max(475) {
+    @include shift(0);
+  }
+}

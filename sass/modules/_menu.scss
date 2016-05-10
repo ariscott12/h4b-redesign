@@ -1,0 +1,27 @@
+.menu {
+  float: right;
+  margin-top: 2em;
+}
+
+.menu__item {
+  float: left;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.05rem;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+.menu__item--first {
+  border-right: 1px solid #fff;
+  padding-right: 1em;
+}
+
+@include break-at-max(600) {
+  .menu {
+    margin-top: .75em;
+  }
+  .menu__item {
+    font-size: .9rem;
+  }
+}

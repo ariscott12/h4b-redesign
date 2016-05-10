@@ -1,0 +1,57 @@
+.product {
+	background:$white;
+	border-radius:12px;
+	border:2px solid $gray-light;
+	text-align: center;
+	padding:2.5em 1em;
+	// margin-bottom:4.75em;
+
+	  @include break-at-max(700) {
+	  	margin-bottom:2em;
+	  }
+}
+
+.product__house {
+	 margin-bottom:4.75em;
+
+	 @include break-at-max(700) {
+	  	margin-bottom:2em;
+	  }
+}
+.product--additional {
+	padding:1.25em 1em 2.5em 1em;
+}
+
+
+
+.product__img {
+	margin-bottom:1.25em;
+	//width:100%;
+
+	@include break-at-max(1100) {
+		width:100%;
+	}
+
+	@include break-at-max(475) {
+		width:80%;
+	}
+}
+
+.product__img--house {
+	margin-bottom: 2em;
+}
+
+.product__copy {
+	font-size:1.15rem;
+	margin-bottom:2.15em;
+}
+
+@include break-at-max(975) {
+	.product__img {
+		margin-bottom:1em;
+	}
+	.product__copy {
+		font-size: .95rem;
+	}
+}
+

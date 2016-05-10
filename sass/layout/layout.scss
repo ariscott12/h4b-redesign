@@ -1,0 +1,33 @@
+.l-contain {
+  @include outer-container();
+
+  @include break-at-max(1220) {
+    padding:0 1.15em;
+  }
+}
+
+.l-center-content {
+  @include center();
+}
+
+.l-text-center {
+  text-align: center;
+}
+
+.l-text-left {
+  text-align: left;
+}
+
+.l-text-right {
+  text-align: right;
+}
+
+.l-clear {
+  clear: both;
+}
+
+.l-clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
