@@ -4,9 +4,10 @@
     padding-top: 25px;
 	height: 0;
 	overflow: hidden;
+	margin-bottom:1.5em;
 
 	@include break-at-max(600) {
-		margin-bottom:2em;
+		
 	}
 
 }

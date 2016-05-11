@@ -491,6 +491,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 2em;
   font-weight: 300; }
 
+.page-section__copy--sml {
+  font-size: 1.1rem;
+  font-style: italic; }
+
 .page-section__copy--center {
   text-align: center; }
 
@@ -502,6 +506,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .page-section--gray {
   background: #F6F6F6; }
+
+.page-section__list li {
+  list-style-type: disc;
+  margin-left: 2em; }
 
 .video {
   width: 100%;
@@ -533,7 +541,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 2em; } }
 
 .product--additional {
-  padding: 1.25em 1em 2.5em 1em; }
+  padding: 1.75em 1em 2.5em 1em; }
 
 .product__img {
   margin-bottom: 1.25em; }
@@ -550,6 +558,10 @@ h1, h2, h3, h4, h5, h6 {
 .product__copy {
   font-size: 1.15rem;
   margin-bottom: 2.15em; }
+
+.product__copy--sml {
+  font-size: 1rem;
+  margin-bottom: 0em; }
 
 @media only screen and (max-width: 975px) {
   .product__img {
@@ -586,10 +598,8 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 52.25%;
   padding-top: 25px;
   height: 0;
-  overflow: hidden; }
-  @media only screen and (max-width: 600px) {
-    .responsive-video {
-      margin-bottom: 2em; } }
+  overflow: hidden;
+  margin-bottom: 1.5em; }
 
 .responsive-video iframe {
   position: absolute;
